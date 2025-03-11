@@ -8,6 +8,12 @@ Author: Matthew Campbell
 Author URI: https://mattdev.it
 */
 
+@import url("https://use.typekit.net/xlo0szj.css");
+/* @import url("https://use.typekit.net/xlo0szj.css"); */
+/* @import url("https://use.typekit.net/xlo0szj.css"); */
+/* @import url("https://use.typekit.net/xlo0szj.css"); */
+
+
 :root {
     --bg: #212529;
     --primary: #4dabf7;
@@ -23,6 +29,12 @@ Author URI: https://mattdev.it
 body {
     background-color: var(--bg);
     color: var(--primary);
+    font-family: "unbounded", sans-serif;
+    /* font-family: "hanken-grotesk", sans-serif; */
+    /* font-family: "archivo-variable", sans-serif; */
+    /* font-family: "kanit", sans-serif; */
+    margin-top: 4rem;
+
 }
 
 header {
@@ -32,17 +44,83 @@ header {
     gap: 2rem;
 }
 
-a {
-    text-decoration: none;
-    background-color: inherit;
-    border: 0.25rem solid var(--primary);
-    color: var(--primary);
-    padding: 0.25rem;
-    margin: 1rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-a:hover {
+.navbar li {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--primary);
+    border: 0.25rem solid var(--primary);
+    border-radius: 0.15rem;
+    margin: 1rem;
+    transition: background-color 0.5s ease;
+}
+
+.navbar a:hover {
     background-color: var(--primary);
     color: var(--secondary);
+    border: 0.25rem solid var(--primary);
+
+
+}
+
+.navbar .current-menu-item a {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+
+hr {
+    border: 0.1rem dashed var(--primary);
+    width: 70vw;
+}
+
+/* a {
+    text-decoration: none;
+} */
+
+
+.content-wrapper {
+    width: 70vw;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 3rem 0;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 2.5rem;
+    margin-top: 2rem;
+    position: relative;
 }
