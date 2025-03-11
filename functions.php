@@ -8,12 +8,24 @@ function theme_support()
 }
 add_action('after_theme_setup', 'theme_support');
 
+function menus()
+{
+    $locations = array(
+        'primary' => 'Desktop primary top menu'
+
+    );
+
+    register_nav_menus($locations);
+}
+add_action('init', 'menus');
+
 
 function register_styles()
 {
     // registering/enqueuing stylesheets
     // edit array if using multiple stylesheets (possibly also Tailwind)
     $version = wp_get_theme()->get('Version');
+    wp_enqueue_style('wren-blog', get_template_directory_uri() . '/style.css', array(), $version, 'all');
     wp_enqueue_style('wren-blog', get_template_directory_uri() . '/style.css', array(), $version, 'all');
 }
 add_action('wp_enqueue_scripts', 'register_styles');
