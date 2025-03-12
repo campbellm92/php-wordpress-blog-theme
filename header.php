@@ -16,7 +16,7 @@
 
 
     <header>
-        <h1>Wren</h1>
+        <a href="index.html" class="site-title"><?php echo get_bloginfo('name') ?></a>
         <nav>
             <?php
             wp_nav_menu(
