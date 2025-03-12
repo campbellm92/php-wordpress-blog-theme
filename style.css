@@ -44,6 +44,18 @@ header {
     gap: 2rem;
 }
 
+.site-title {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 700;
+
+}
+
+.site-title:hover {
+    text-decoration: underline;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
