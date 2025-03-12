@@ -4,9 +4,12 @@ function theme_support()
 {
     // adds dynamic title tags
     add_theme_support('title-tag');
+    add_theme_support('custom-logo');
+    add_theme_support('post-thumbnails');
 
 }
 add_action('after_theme_setup', 'theme_support');
+
 
 function menus()
 {
