@@ -1,5 +1,5 @@
 <footer>
-    Wren blog theme by Matthew Campbell
+    Wren blog theme 🐦 Matthew Campbell
 </footer>
 
 <?php
